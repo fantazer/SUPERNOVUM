@@ -1,4 +1,5 @@
 @import 'rupture'
+@import "variable/_fonts.styl"
 @import "variable/_function.styl"
 @import "variable/_ie.styl"
 @import "icon/sprite.css"
@@ -28,11 +29,249 @@ init($breakpoints, $columns)
 body
 	@extend .type--main
 	font-family $v-font
-	color $main-text-color
-	line-height 1.2
+	//color $main-text-color
+	line-height 1.5
 	letter-spacing 0.01em
 	
 .main-cont
 	center(1200px,10px)
-	
+
+.header
+	+below(768px)
+		padding: 15px 0
+	padding: 30px 0
+
+.header-logo
+	+below(768px)
+		font-size: 24px
+	text-align: center
+	display: block
+	font-family "Gotham"
+	font-size: 40px
+	color black
+	margin-bottom: 0px
+
+.header-logo-sub
+	text-align: center
+	color $gray
+
+.menu
+	+below(768px)
+		position: relative
+		flex(mid)
+		padding: 10px
+	border-top 1px solid $border-color
+	padding: 20px 0
+	background: white
+
+.menu-wrap
+	+below(768px)
+		fw()
+		fl()
+		border-bottom 1px solid $border-color
+		position: absolute
+		top 100%
+		z-index 10
+		background: white
+		width: 100%
+	flex(mid)
+
+.menu-cont
+	+below(768px)
+		display: none
+		position: absolute
+		top 100%
+		z-index 10
+		background: white
+		width: 100%
+
+.menu-toggle
+	+above(769px)
+		display: none
+	.icon
+		size 24px
+
+.menu__el
+	+below(768px)
+		display: block
+		width: 100%
+		padding: 10px
+		text-align: center
+	padding:0 20px
+	color black
+	up()
+
+.baner
+	+below(768px)
+		margin-bottom: 40px
+		background: #f2f2f2
+	position: relative
+	img
+		+below(768px)
+			display: none
+		filter: grayscale(100%)
+	margin-bottom: 100px
+
+.baner__content
+	+below(1024px)
+		width: 45%
+		margin-right: 5%
+	+below(768px)
+		width: 100%
+		margin-right: 0
+		padding: 40px 20px
+		text-align: center
+		position: static
+	position: absolute
+	top:0
+	right: 0
+	height: 100%
+	width: 100%
+	.main-cont
+		+below(768px)
+			flex(mid)
+		height: 100%
+		f()
+		justify-content: flex-end
+		align-items: center
+
+.baner__text
+	+below(640px)
+		font-size: 12px
+
+.baner__title
+	+below(1024px)
+		font-size: 24px
+	+below(640px)
+		font-size: 18px
+		margin-bottom: 10px
+	font-size: 40px
+	font-weight: 600
+	font-family "Gotham"
+
+.category-title
+	+below(768px)
+		font-size: 24px
+		margin-bottom: 30px
+	up()
+	text-align: center
+	font-size: 40px
+	margin-bottom: 70px
+	border-bottom 4px double $border-color
+	padding-bottom: 30px
+
+.category-row
+	+below(768px)
+		grid-template-columns repeat(2,1fr)
+		grid-gap 20px
+	+below(640px)
+		grid-template-columns repeat(1,1fr)
+	display grid
+	grid-template-columns repeat(3,1fr)
+	grid-gap 50px
+
+.category-el
+	+below(768px)
+		margin-bottom: 20px
+	margin-bottom: 50px
+.category-el__img
+	padding: 40%
+	bg-full()
+	filter: grayscale(100%)
+	margin-bottom: 20px
+.category-el__title
+	up()
+	font-size: 18px
+	color black
+	margin-bottom: 20px
+
+.forum
+	+below(768px)
+		margin: 30px 0
+		padding: 20% 15%
+		height: 360px
+	margin: 80px 0
+	bg-full()
+	filter: grayscale(100%)
+	padding: 20%
+	position: relative
+
+.forum__content
+	position: absolute
+	top:0
+	right: 0
+	height: 100%
+	width: 100%
+	z-index 5
+	.main-cont
+		height: 100%
+		f()
+		fl()
+		justify-content: center
+		align-items: center
+
+.forum-wrap
+	f()
+	fl()
+	justify-content: center
+	align-items: center
+
+.forum__title
+	+below(768px)
+		font-size: 24px
+		text-align: center
+	font-size: 40px
+	font-weight: 600
+	font-family "Gotham"
+	color white
+
+.forum__text
+	text-align: center
+	color white
+	margin-bottom: 40px
+
+.forum-filter
+	position: absolute
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+	background: rgba(0, 0, 0, 0.51)
+
+.forum-get
+	@extend .btn--md
+	@extend .btn--light
+	background: none
+	color white
+
+.footer
+	+below(768px)
+		padding: 50px 10px
+		margin-top: 40px
+	margin-top: 100px
+	padding: 150px 0
+	background: #f5f5f5
+	flex(mid)
+	fl()
+.footer-sub
+	background: #e8e8e8
+	padding: 20px
+	text-align: center
+
+.footer-title
+	+below(768px)
+		font-size: 28px
+	up()
+	font-size: 80px
+	font-weight 600
+	color #424242
+	font-family 'Gotham'
+
+.footer-title-sub
+	+below(768px)
+		br
+			display: none
+	color #909090
+	text-align: center
+	color #444444
 @import "../module/**/*"

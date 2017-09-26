@@ -3,4 +3,99 @@ include block_html/_include.pug
 
 +header()
 
+.baner
+	img(src="img/baner-1.jpg", alt="")
+	.baner__content
+		.main-cont
+			.baner-wrap
+				.baner__title Первый закон истории
+				.baner__text Бояться какой бы то ни было лжи, а затем — не бояться какой бы то ни было правды
+
+.main-cont
+	.category-title Политинформация
+
+.main-cont
+		.category-row
+			- for (var i=0;i<2;i++)
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-1.jpg')")
+					.category-el__title Александр Невский Биография
+					.category-el__text Александр Невский появился на исторической арене в первой половине 13-гоI века. Это было непростое время. Северным русским землям угрожали не только монголы, зарилась
+
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-2.jpg')")
+					.category-el__title Оборона севастополя
+					.category-el__text Севастополь был в числе первых городов СССР, который подвергся в первый день войны налету фашисткой авиации. Это произошло 22 июня 1941 года в
+
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-3.jpg')")
+					.category-el__title Операция «Искра»
+					.category-el__text На исходе 1942 года обстановка под Ленинградом была сложной: сухопутная связь между городом и «Большой землей»  отсутствовала, войска Ленинградского фронта, а также Балтийского
+
+				//a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-4.jpg')")
+					.category-el__title Тяжела ты, шапка Мономаха
+					.category-el__text Это крылатое выражение может служить эпиграфом к судьбе Владимира Мономаха, великого князя Киевского, «победителя половецкой степи». Щит для земли русской Мономахом звался дед
+
+.forum(style="background-image:url('img/baner-2.jpg')")
+	.forum-filter
+	.forum__content
+		.main-cont
+			.forum-wrap
+				.forum__title Посетите наш форум
+				.forum__text Не знать истории — значит всегда быть ребенком.
+				a(href="#").forum-get перейти
+
+.main-cont
+	.category-title Консилиум
+
+.main-cont
+		.category-row
+			- for (var i=0;i<2;i++)
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-1.jpg')")
+					.category-el__title Александр Невский Биография
+					.category-el__text Александр Невский появился на исторической арене в первой половине 13-гоI века. Это было непростое время. Северным русским землям угрожали не только монголы, зарилась
+
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-2.jpg')")
+					.category-el__title Оборона севастополя
+					.category-el__text Севастополь был в числе первых городов СССР, который подвергся в первый день войны налету фашисткой авиации. Это произошло 22 июня 1941 года в
+
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-3.jpg')")
+					.category-el__title Операция «Искра»
+					.category-el__text На исходе 1942 года обстановка под Ленинградом была сложной: сухопутная связь между городом и «Большой землей»  отсутствовала, войска Ленинградского фронта, а также Балтийского
+
+.forum(style="background-image:url('img/baner-4.jpg')")
+	.forum-filter
+	.forum__content
+		.main-cont
+			.forum-wrap
+				.forum__title Морские сражения
+				.forum__text Любая война популярна в течение первых тридцати дней
+				a(href="#").forum-get перейти
+
+.main-cont
+	.category-title Консилиум
+.main-cont
+		.category-row
+			- for (var i=0;i<2;i++)
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-1.jpg')")
+					.category-el__title Александр Невский Биография
+					.category-el__text Александр Невский появился на исторической арене в первой половине 13-гоI века. Это было непростое время. Северным русским землям угрожали не только монголы, зарилась
+
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-2.jpg')")
+					.category-el__title Оборона севастополя
+					.category-el__text Севастополь был в числе первых городов СССР, который подвергся в первый день войны налету фашисткой авиации. Это произошло 22 июня 1941 года в
+
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-3.jpg')")
+					.category-el__title Операция «Искра»
+					.category-el__text На исходе 1942 года обстановка под Ленинградом была сложной: сухопутная связь между городом и «Большой землей»  отсутствовала, войска Ленинградского фронта, а также Балтийского
+
++footer()
+
 include ./block_html/_script.pug

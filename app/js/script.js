@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+	var hideToggle = function(targetClick,toggleEl) {
+		$(targetClick).click(function(event){
+				event.stopPropagation();
+				$(toggleEl).slideToggle("fast");
+		});
+		$(toggleEl).on("click", function (event) {
+			event.stopPropagation();
+		});
+		$(document).on("click", function () {
+				$(toggleEl).hide();
+		});
+	}
+	hideToggle('.menu-toggle','.menu-cont');
 
 	/* ###### For only ies  ######*/
 	//if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
