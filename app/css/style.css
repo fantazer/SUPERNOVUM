@@ -438,14 +438,12 @@ h4 {
   }
 }
 .type--main,
-h3,
 p,
 body {
   font-size: 14px;
 }
 @media only screen and (max-width: 768px) {
   .type--main,
-  h3,
   p,
   body {
     font-size: 12px;
@@ -459,41 +457,69 @@ body {
     font-size: 15px;
   }
 }
-.type--lg,
-h2 {
+.type--lg {
   font-size: 24px;
   font-weight: 500;
   font-family: "Gotham";
 }
 @media only screen and (max-width: 768px) {
-  .type--lg,
-  h2 {
+  .type--lg {
     font-size: 16px;
   }
 }
-.type--xl,
-h1 {
+.type--xl {
   font-size: 30px;
   font-weight: 500;
   font-family: "Gotham";
 }
 @media only screen and (max-width: 768px) {
-  .type--xl,
-  h1 {
+  .type--xl {
     font-size: 20px;
   }
 }
 .type--bold {
   font-weight: bold;
 }
-h1 {
-  color: #111;
-}
-h2 {
-  color: #111;
-}
+.h,
+h1,
+h2,
 h3 {
   color: #111;
+  margin: 0px;
+  margin-bottom: 40px;
+  font-family: "Gotham";
+}
+@media only screen and (max-width: 768px) {
+  .h,
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+h1 {
+  font-size: 42px;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+h2 {
+  font-size: 28px;
+}
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+h3 {
+  font-size: 22px;
+}
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 15px;
+  }
 }
 h4 {
   color: #111;
@@ -1262,7 +1288,8 @@ body {
   color: #fff;
   margin-bottom: 40px;
 }
-.forum-filter {
+.forum-filter,
+.header-baner-filter {
   position: absolute;
   top: 0;
   left: 0;
@@ -1326,6 +1353,157 @@ body {
   .footer-title-sub br {
     display: none;
   }
+}
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .content {
+    margin: 30px 0;
+  }
+}
+.bread-crumbs-wrap {
+  margin: 40px 0;
+}
+@media only screen and (max-width: 768px) {
+  .bread-crumbs-wrap {
+    margin: 20px 0;
+  }
+}
+.nav-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page-number,
+.page-numbers {
+  border: 1px solid #dfdfdf;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .page-number,
+  .page-numbers {
+    width: 30px;
+    height: 30px;
+  }
+}
+span.page-numbers.current {
+  background: #000;
+  color: #fff;
+  border-color: #111;
+}
+.page-numbers.next,
+.page-numbers.prev {
+  padding: 10px;
+  height: 45px;
+  width: auto !important;
+}
+@media only screen and (max-width: 768px) {
+  .page-numbers.next,
+  .page-numbers.prev {
+    height: 30px;
+  }
+}
+.star__rating img {
+  display: inline-block !important;
+}
+.forum--single {
+  margin-bottom: -100px;
+}
+@media only screen and (max-width: 768px) {
+  .forum--single {
+    margin-bottom: -40px;
+  }
+}
+.content-block {
+  width: 100%;
+}
+.content-block img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  margin: 20px auto;
+}
+.content-block p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .content-block p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+.header-baner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/baner-2.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  position: relative;
+  padding: 18% 10px;
+  width: 100%;
+  background-attachment: fixed;
+}
+.header-baner h1 {
+  color: #fff;
+  z-index: 10;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer-single .footer {
+  margin-top: 0;
+}
+.footer-single .forum {
+  margin-bottom: 0;
+}
+.catalog {
+  margin-top: 80px;
 }
 /* block footer*/
 /*block footer end */

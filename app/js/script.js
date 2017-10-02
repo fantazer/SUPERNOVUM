@@ -11,8 +11,12 @@ $(document).ready(function(){
 		$(document).on("click", function () {
 				$(toggleEl).hide();
 		});
+	};
+
+	if($(window).width() < 768){
+		hideToggle('.menu-toggle','.menu-cont');
 	}
-	hideToggle('.menu-toggle','.menu-cont');
+
 
 	/* ###### For only ies  ######*/
 	//if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){

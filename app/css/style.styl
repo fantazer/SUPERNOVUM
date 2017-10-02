@@ -274,4 +274,92 @@ body
 	color #909090
 	text-align: center
 	color #444444
+
+.content
+	+below(768px)
+		margin: 30px 0
+	f()
+	margin-bottom: 80px
+	align-items: flex-start
+	justify-content: space-between
+
+.bread-crumbs-wrap
+	+below(768px)
+		margin: 20px 0
+	margin: 40px 0
+
+.nav-links
+	f()
+	justify-content: center
+
+.page-number, .page-numbers
+	+below(768px)
+		size 30px
+	border 1px solid $border-color
+	size 45px
+	flex(mid)
+	margin-right: 15px
+	text-align: center
+
+span.page-numbers.current
+	background: #000
+	color white
+	border-color black
+
+.page-numbers.next, .page-numbers.prev
+	+below(768px)
+		height: 30px
+	padding: 10px
+	height: 45px
+	width: auto!important
+
+.star__rating
+	img
+		display: inline-block !important
+
+.forum--single
+	margin-bottom: -100px
+	+below(768px)
+		margin-bottom: -40px
+
+.content-block
+	width: 100%
+	img
+		filter: grayscale(100%)
+		margin: 20px auto
+	p
+		+below(768px)
+			font-size: 14px
+			margin-bottom: 20px
+		font-size: 16px
+		margin-bottom: 40px
+
+.header-baner
+	flex(mid)
+	bgi('baner-2.jpg')
+	bg-full()
+	filter: grayscale(100%)
+	position: relative
+	padding: 18% 10px
+	width: 100%
+	background-attachment fixed
+	h1
+		color white
+		z-index 10
+		up()
+		margin-bottom: 0
+		text-align: center
+
+.header-baner-filter
+	@extend .forum-filter
+
+.footer-single
+	.footer
+		margin-top: 0
+	.forum
+		margin-bottom: 0
+
+.catalog
+	margin-top: 80px
+
 @import "../module/**/*"

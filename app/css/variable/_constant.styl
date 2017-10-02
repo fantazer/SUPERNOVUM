@@ -70,15 +70,29 @@ typeSize(fontSm,font)
 .type--bold
 	font-weight bold
 
+.h
+	+below(768px)
+		margin-bottom: 20px
+	color black
+	margin: 0px
+	margin-bottom: 40px
+	font-family "Gotham"
+
 h1
-	@extend .type--xl
-	color black
+	typeSize(42,20)
+	@extend .h
+
+	//font-family "Oswald"
 h2
-	@extend .type--lg
-	color black
+	typeSize(28,18)
+	@extend .h
+
+	//font-family "Oswald"
 h3
-	@extend .type--main
-	color black
+	typeSize(22,15)
+	@extend .h
+
+	//font-family "Oswald"
 h4
 	@extend .type--sm
 	color black
