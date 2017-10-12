@@ -1,0 +1,45 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
++header()
+
+.header-baner
+	.header-baner-filter
+	.main-cont
+		h1 Каталог
+
+.catalog
+	.main-cont
+		.category-row
+			- for (var i=0;i<2;i++)
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-1.jpg')")
+					.category-el__title Александр Невский Биография
+					.category-el__text Александр Невский появился на исторической арене в первой половине 13-гоI века. Это было непростое время. Северным русским землям угрожали не только монголы, зарилась
+
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-2.jpg')")
+					.category-el__title Оборона севастополя
+					.category-el__text Севастополь был в числе первых городов СССР, который подвергся в первый день войны налету фашисткой авиации. Это произошло 22 июня 1941 года в
+
+				a(href="#").category-el
+					.category-el__img(style="background-image:url('img/category-3.jpg')")
+					.category-el__title Операция «Искра»
+					.category-el__text На исходе 1942 года обстановка под Ленинградом была сложной: сухопутная связь между городом и «Большой землей»  отсутствовала, войска Ленинградского фронта, а также Балтийского
+
+
+
+.footer-single
+	.forum(style="background-image:url('img/baner-2.jpg')")
+		.forum-filter
+		.forum__content
+			.main-cont
+				.forum-wrap
+					.forum__title Посетите наш форум
+					.forum__text Не знать истории — значит всегда быть ребенком.
+					a(href="#").forum-get перейти
+
+
+	+footer()
+
+include ./block_html/_script.pug
